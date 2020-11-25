@@ -284,6 +284,7 @@ class CircleAnnotation extends AnnotationElement
         const annotation = this.sprite.annotation.data;
 
         return html`<div class="sv-title">${annotation.title}</div>
+            ${annotation.imageUri ? html`<img class="sv-annotation-img" src="${annotation.imageUri}"></img>` : null}
             <p>${annotation.lead}</p>
             ${annotation.articleId ? html`<ff-button inline text="Read more..." icon="document" @click=${this.onClickArticle}></ff-button>` : null}`;
     }

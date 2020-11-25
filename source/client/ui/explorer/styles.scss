@@ -162,6 +162,10 @@ $pad: $canvas-border-width + $main-menu-button-size + 8px;
   @include noselect;
 }
 
+.sv-annotation-img {
+  max-width: 100%;
+}
+
 .sv-circle-annotation {
   width: 16%;
   min-width: 160px;
